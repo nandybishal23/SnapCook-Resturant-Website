@@ -1,0 +1,198 @@
+
+:root {--mb-2: 1rem;}
+
+#about{
+    padding: 100px;
+  }
+  .about{
+    margin: 50px 0;
+    display: flex;
+    padding-left: 50px;
+  }
+  .about-icon .fas{
+    font-size: 60px;
+    color: #b43757;
+    margin-right: 20px;
+  }
+  .about-subtitle{
+    text-transform: capitalize;
+    color: #b43757;
+    font-size: 25px;
+  }
+  .about-info{
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+  .about-icon:hover .fas,
+  .about-subtitle:hover{
+  transition: transform 1s ease, color 1s ease;
+  transform: translateY(-10px);
+    color: #b43757;
+    cursor: pointer;
+  }
+  @media screen and (min-width: 576px){
+    .about-center{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .about{
+        flex: 0 0 calc(50% - 16px);
+    }
+  }
+  @media screen and (min-width:972px){
+    .about{
+        flex: 0 0 calc(33.3% - 16px);
+    }
+  }
+  #social-icons{    
+     
+     text-align: center;
+     /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 40%);*/
+     margin: 20px 0;
+    }
+    #social-icons a{
+      display: inline-block;     
+    
+      font-size: 40px;
+      border-radius:5px;
+      transition: transform 1s ease, color 1s ease;
+    }
+    #social-icons a:hover{
+      transform: translateY(-20px);
+    }
+    .facebook{
+      color: #3b5998;
+    }
+    .twitter{
+    color:  #38A1F3;
+    }
+    .instagram{
+    color:   #e1306c;
+    }
+    .plus{
+      color:#db4a39;
+    }
+    .about-container {
+        max-width: 900px;
+        margin: 0 auto;
+        font-family: "Roboto", sans-serif;
+        padding-top: 10px;
+      }
+      
+      .about-container p {
+        line-height: 2;
+        
+      }
+      
+      .about-container .profile-image {
+        text-align: center;
+        padding: 30px;
+        padding-top: 10px;
+      }
+      
+      .about-container .profile-image img {
+        width: 200px;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        padding: 8px;
+      }
+      
+      .projects-container {
+        display: flex;
+        justify-content: center;
+        padding: 8px;
+        box-shadow: 0 4px 16px -6px rgba(0, 0, 0, 0.4);
+        max-width: 550px;
+        margin: 24px auto;
+        border-radius: 20px;
+      }
+      
+      .projects-container .project {
+        height: 160px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 32px;
+      }
+      
+      .projects-container .project-name {
+        font-size: 16px;
+      }
+      
+      .projects-container .project-number {
+        font-size: 72px;
+        font-weight: bold;
+      }
+      .our-team-heading {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 48px;
+        padding-top: 64px;
+      }
+      .description{
+          text-align: justify;
+          margin-bottom: var(--mb-2);
+      }
+      
+      .our-team {
+        display: flex;
+        padding: 30px;
+      }
+      
+      .our-team img {
+        width: 100%;
+      }
+      
+      .our-team .team-member {
+        margin: 0 4px;
+        position: relative;
+      }
+      
+      .our-team .designation {
+        position: absolute;
+        bottom: 30px;
+        background: #fff;
+        padding: 12px 20px;
+        border-radius: 0 20px 20px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        font-size: 14px;
+      }
+      
+      .our-mission {
+        padding: 20px;
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+      
+      .our-mission .quote-icon {
+        position: absolute;
+        opacity: 0.2;
+        height: 80px;
+      }
+      
+      .our-mission p {
+        margin-left: 100px;
+        font-size: 20px;
+        font-style: italic;
+      }
+      
+      @media (max-width: 700px) {        
+        .projects-container{
+        flex-direction: column;
+        align-items: center;
+        }
+      }
+      @media screen and (max-width: 950px) {
+        .about-container .description {
+            margin: 20px 20px;
+        }
+      }
+      .about-center{
+          margin-top: 10px;
+      }
+     
+      

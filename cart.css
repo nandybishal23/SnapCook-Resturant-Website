@@ -1,0 +1,57 @@
+h1{    
+    font-size: 70px;    
+    padding-top: 100px;
+    color: #b43757;
+}
+#maincontainer {
+  
+  padding-bottom: 50px;
+}
+
+
+#pro-info {
+  padding-top: 10px;
+}
+
+#row1 {
+  padding-top: 10vh;
+}
+
+#cartmain {
+  
+  max-height: 100vh;
+}
+#cart-heading {
+  padding-top: 35px;
+  font-size: 30px;
+}
+
+#table-row {
+  padding-top: 50px;
+}
+
+#about {
+  background-color: #444444;
+  max-height: 25vh;
+}
+#about-row {
+  
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.product-name{
+    color: #b43757;
+    font-size: 20px;
+
+}
+h2{
+    font-size: 50px;
+    color: #b43757;
+}
+
+img{
+    transition: transform 1s;
+}
+img:hover{
+    transform: translateY(-10px);
+}

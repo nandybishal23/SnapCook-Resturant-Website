@@ -1,0 +1,157 @@
+
+/*--------------Reusable propertoies------------------*/
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+/*--------------BUtton------------------*/
+.btn{
+    display: inline-block;
+    padding: 8px 30px;
+    background: #b43757;
+    color: #fff;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: #563434;
+}
+.home__title{
+    font-size: 90px;
+  
+}
+
+/*-----------------Account page---------------*/
+
+.form-container{
+    width: 300px;
+    height: 430px;    
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px 0; 
+    margin: auto;
+    border: 5px solid;
+    border-color: #b43757;
+    overflow: hidden;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #b43757;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.form-btn{
+    display: inline-block;
+
+}
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 180px;
+    transition: transform 1s;
+
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0px 10px;
+    border: 1px solid #ccc;
+}
+form .btn{
+    width: 100%;
+    border: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+form .btn:focus{
+    outline: none;
+}
+#LoginForm{
+    left: -300px;
+}
+#RegForm{
+    left: 0;
+}
+form a{
+    font-size: 12px;
+}
+#Indicator{
+    width: 100px;
+    border: none;
+    background: #ff67b3;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(50px);
+    transition: transform 1s;
+    
+}
+#image{
+    display:block;
+    width: 100px;
+    height:100px;
+    margin: 0 auto;
+    max-width: 100%;
+    
+    
+    
+    
+}
+.fp{
+    color: #ff67b3;
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+    .single-product .row{
+        text-align: left;
+
+    }
+    .single-product .col-2{
+        padding: 20px 0;
+    }
+    .single-product h1{
+        font-size: 26px;
+        line-height: 32px;
+    }
+}

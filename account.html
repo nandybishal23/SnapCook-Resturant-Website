@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="ionicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+
+        
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="account.css">
+
+        <title>Account-Page</title>
+        <link rel = "icon" href ="002.png" type = "image/x-icon" sizes="400px 500px">
+    </head>
+    <body>
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <img src="001.JPG" alt="SNAPCOOK" width="150" height="70">
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link ">Home</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>                        
+                        <li class="nav__item"><a href="menu.html" class="nav__link">Menu</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link active-link">Account</a></li>
+                        <li class="nav__item"><a href="contact.html" class="nav__link">Contact us</a></li>
+                        
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+        <section class="home" id="home">
+            <div class="home__container bd-container bd-grid">
+                <div class="home__data">
+                    <h1 class="home__title">Create Account</h1>
+                    
+                </div>
+
+                <div class="form-container">
+                    
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="Indicator">
+                    </div>
+                    <div class="img-01">
+                        <img src="018.png" id="image" alt="User" />
+                    </div>
+                    <form id="LoginForm">
+                        <input type="text" placeholder="User Name">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="" class="fp">Forgot password</a>
+                    </form> 
+                    <form id="RegForm">
+                        <input type="text" placeholder="User Name">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Register</button> 
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">Snap Cook</a>
+                    <span class="footer__description">Restaurant</span>
+                    <div>
+                        <a href="#" class="fa fa-facebook" width="100"></a>&nbsp &nbsp &nbsp
+                        <a href="#" class="fa fa-instagram"></a>&nbsp &nbsp &nbsp
+                        <a href="#" class="fa fa-twitter"></a>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Delivery</a></li>
+                        <li><a href="#" class="footer__link">Take Away</a></li>
+                        <li><a href="#" class="footer__link">Dine in</a></li>
+                        <li><a href="#" class="footer__link">Party Reserve</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Information</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Contact us</a></li>
+                        <li><a href="#" class="footer__link">Privacy policy</a></li>
+                        <li><a href="#" class="footer__link">Terms of services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Address</h3>
+                    <ul>
+                        <li>📍Barasat - Kolkata</li>
+                        <li>WestBengal - India</li>
+                        <li>9330056876</li>
+                        <li>📩foodtune12@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+
+            <p class="footer__copy" background-color="#1D2521">Copyright &copy; 2021 The BIG BISHAL Web Development.</p>
+        </footer>
+
+        
+
+
+        </body>
+        <script>
+            var LoginForm=document.getElementById("LoginForm");
+            var RegForm=document.getElementById("RegForm");
+            var Indicator=document.getElementById("Indicator");
+        
+            function register()
+            {
+                RegForm.style.transform = "translateX(0px)";
+                LoginForm.style.transform = "translateX(0px)";
+                Indicator.style.transform = "translateX(50px)";
+            }
+        
+            function login()
+            {
+                RegForm.style.transform = "translateX(300px)";
+                LoginForm.style.transform = "translateX(300px)";
+                Indicator.style.transform = "translateX(-50px)";
+            }
+        </script>
+         <script src="https://unpkg.com/scrollreveal"></script>
+
+         <!--========== MAIN JS ==========-->
+         <script src="script.js"></script>
+        
+        
+        </html>
